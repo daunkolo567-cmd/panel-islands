@@ -1,7 +1,7 @@
 {
     "uuid": "panel-islands@lox",
     "name": "Panel Islands",
-    "description": "Floating island-style top panel with configurable opacity, spacing, corner radius and shadow.",
-    "shell-version": ["45", "46", "47", "48", "49", "50", "51"],
+    "description": "Floating island-style top panel for GNOME Shell 51, with configurable opacity, spacing, corner radius and shadow.",
+    "shell-version": ["51"],
     "settings-schema": "org.gnome.shell.extensions.panel-islands"
 }

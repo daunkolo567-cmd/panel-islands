@@ -5,7 +5,7 @@ rounded, spaced islands (left / center / right) with configurable opacity,
 corner radius, margin, height, color and shadow.
 
 - UUID: `panel-islands@lox`
-- Shell versions: 45 – 51
+- Shell version: GNOME Shell **51**
 
 ## Install
 
