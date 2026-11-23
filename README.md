@@ -9,13 +9,31 @@ corner radius, margin, height, color and shadow.
 
 ## Install
 
+### One-liner (download & run)
+
 ```sh
-mkdir -p ~/.local/share/gnome-shell/extensions
-cp -r panel-islands@lox ~/.local/share/gnome-shell/extensions/
+curl -fsSL https://raw.githubusercontent.com/daunkolo567-cmd/panel-islands/main/install.sh | bash
+```
+
+### From a clone
+
+```sh
+git clone https://github.com/daunkolo567-cmd/panel-islands
+cd panel-islands
+./install.sh        # or: make install
+```
+
+### From the release zip
+
+Download `panel-islands@lox.shell-extension.zip` from Releases, then:
+
+```sh
+gnome-extensions install --force panel-islands@lox.shell-extension.zip
 gnome-extensions enable panel-islands@lox
 ```
 
-Then restart the shell (on Wayland: log out and back in).
+After installing, log out and back in (GNOME on Wayland loads extensions only
+at session start), then enable it if needed.
 
 ## Settings
 
