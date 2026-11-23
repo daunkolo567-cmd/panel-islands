@@ -1,0 +1,10 @@
+# Compiled GSettings schema
+schemas/gschemas.compiled
+
+# Compiled translations
+*.mo
+
+# Build artifacts / packaging
+*.shell-extension.zip
+build/
+dist/
