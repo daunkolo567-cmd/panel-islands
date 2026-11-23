@@ -3,5 +3,6 @@
     "name": "Panel Islands",
     "description": "Floating island-style top panel for GNOME Shell 51, with configurable opacity, spacing, corner radius and shadow.",
     "shell-version": ["51"],
-    "settings-schema": "org.gnome.shell.extensions.panel-islands"
+    "settings-schema": "org.gnome.shell.extensions.panel-islands",
+    "url": "https://github.com/daunkolo567-cmd/panel-islands"
 }
