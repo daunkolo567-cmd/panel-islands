@@ -38,6 +38,20 @@ export default class PanelIslandsExtension extends Extension {
             this._cssFile = null;
         }
 
+        try {
+            const dir = Gio.File.new_for_path(this._cssDir);
+            if (dir.query_exists(null)) {
+                const it = dir.enumerate_children('standard::name',
+                    Gio.FileQueryInfoFlags.NONE, null);
+                let info;
+                while ((info = it.next_file(null)))
+                    dir.get_child(info.get_name()).delete(null);
+                it.close(null);
+            }
+        } catch (e) {
+            logError(e, 'panel-islands: failed to clean cache dir');
+        }
+
         for (const box of this._boxes)
             box.set_style(null);
         this._boxes = null;
